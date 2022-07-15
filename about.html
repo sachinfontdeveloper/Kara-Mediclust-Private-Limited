@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon">
+  <title>Kara Mediclust Private Limited</title>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- BOOTSTRAP CSS FILE LINK -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <!-- RESPONSIVE CSS FILE LINK -->
+  <link rel="stylesheet" href="css/responsivestyle.css">
+  <!-- FONT-AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar Starting -->
+  <nav>
+    <div class="fullwidthnavbar">
+      <div class="fixwidthnavbar">
+        <div class="navbarcontent">
+          <div class="brandname">
+            <a href="index.html">
+              <h1 class="ftext">Kara</h1>
+              <h1 class="stext">Mediclust</h1>
+              <h1 class="ttext">House Of laparo</h1>
+            </a>
+          </div>
+          <ul class="navbarlist" id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <span class="barclose" onclick="navClose()">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </ul>
+          <div class="mobile-navbar" onclick="navOpen()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav> <!-- Navbar End -->
+
+  <!-- Emty Layar -->
+  <div class="emtylayar" style="width: 100%; height: 69px; background-color: f7f7f7;"></div>
+
+  <!-- Slider Starting -->
+  <div class="pc-laptop-screen">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Banner/arthroscopic-trocar.png" class="d-block w-100" alt="arthroscopic-trocar">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Banner/cautery-machine-smart-4.png" class="d-block w-100" alt="cautery-machine-smart-4">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Banner/laparoscopic-scissor.png" class="d-block w-100" alt="laparoscopic-scissor">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-screen">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Banner/laparoscopic-scissor-phn.png" class="d-block w-100" alt="laparoscopic-scissor">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Banner/arthroscopic-trocar-phn.png" class="d-block w-100" alt="arthroscopic-trocar">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Banner/cautery-machine-smart-4.-phn.png" class="d-block w-100" alt="cautery-machine-smart-4">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> <!-- Slider End -->
+
+  <!-- About Starting -->
+  <div class="about-full-width">
+    <h1 class="products-text">About Us</h1>
+    <div class="product-emty-layar"></div>
+    <div class="about-fix-width">
+      <div class="about-content">
+        <div class="about-content-box">
+          <h1>Kara Mediclust Private Limited</h1>
+          <p>Established in <i>2015</i>, we, <i> Kara Mediclust Private Limited </i> is an eminent entity indulged in
+            Manufacturer and
+            Trader a huge compilation of <i> Medical HD Camera, Laparoscopic Hand Instrument, Hysteroscope Set,
+              Gynaecology
+              Instrument, Laparoscopy Surgery Products, Rigid Endoscope </i>. Manufactured making use of supreme in
+            class
+            material and progressive tools and technology, these are in conformism with the guidelines defined by the
+            market. Along with this, these are tested on a set of norms prior final delivery of the order.
+            <br> <br>
+            With a motive to stand high on the visions of our patrons, we are indulged in providing a huge array of
+            products to our patrons, which are in tandem with the comprehensively accredited standards of quality. Along
+            with this, all our departments are managed by their respective executives to ensure that all the
+            responsibilities are getting finished effectively within the assured time. Since our inception, we are
+            working under the supervision of <b> Mr. Gyan Prakash </b>. His enormous knowledge and information in this
+            domain
+            have directed us in becoming one of the well-known suppliers of the industry.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- About End -->
+
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="width: 80%; margin: 0 auto; margin-top: 20px;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/img.jpeg" class="d-block w-100" alt="img">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img1.jpeg" class="d-block w-100" alt="img">
+      </div>
+      <div class="carousel-item">
+        <img src="img/img2.jpeg" class="d-block w-100" alt="img">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Footer Starting -->
+  <footer>
+    <div class="footer-full-width">
+      <div class="footer-fix-width">
+        <div class="footer-content">
+          <div class="fbox1">
+            <h1>Our Company</h1>
+            <span class="cdescripation">
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Our Products</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+              </ul>
+              <span class="socailicon">
+                <a href="https://www.facebook.com/Kara-Mediclust-106023911965232" target="_blank"><i
+                    class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?next=/karamediclustpvtltd/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Karamedisuppli1" target="_blank"><i
+                    class="fa-brands fa-twitter-square"></i></a>
+                <a href=""></a><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""></a><i class="fa-brands fa-youtube-square"></i></a>
+              </span>
+            </span>
+          </div>
+          <div class="fbox2">
+            <h1>Reach Us</h1>
+            <span class="kadressde">
+              <h3>Kara Mediclust Private Limited</h3>
+              <p> F 12/3, 3rd Floor, Street No. 29 IP Extension, <br>
+                Patparganj, Near Preet Vihar Metro Station,
+                New <br> Delhi-110092, Delhi, India</p>
+              <p style="font-size: 15px;">Call Number : +91-9716353859</p>
+            </span>
+          </div>
+          <div class="fbox3">
+            <h1>About Us</h1>
+            <span class="aboutusd">
+              <h3>Kara Mediclust Private Limited</h3>
+              <p> Established in 2015, we, Kara Mediclust Private Limited
+                is an eminent entity indulged in Manufacturer and Trader a huge compilation .. <a href="about.html">Read
+                  More</a>
+                </h4>
+              <p style="font-size: 15px;">Gmail : karamediclust@gmail.com</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <h1 class="cright">All rights reserved by <b>Kara Mediclust Private.Limited</b></h1>
+  </footer> <!-- Footer End -->
+
+  <!-- BOOTSTRAP JS FILE LINK -->
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+  <!-- JAVASCRIPT FILE LINK -->
+  <script src="javascript/karaScript.js"></script>
+</body>
+
+</html>

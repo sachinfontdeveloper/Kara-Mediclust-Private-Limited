@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="logo/logo.png" type="image/x-icon">
+  <title>Kara Mediclust Private Limited</title>
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- BOOTSTRAP CSS FILE LINK -->
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.css">
+  <!-- RESPONSIVE CSS FILE LINK -->
+  <link rel="stylesheet" href="css/responsivestyle.css">
+  <!-- FONT-AWESOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar Starting -->
+  <nav>
+    <div class="fullwidthnavbar">
+      <div class="fixwidthnavbar">
+        <div class="navbarcontent">
+          <div class="brandname">
+            <a href="index.html">
+              <h1 class="ftext">Kara</h1>
+              <h1 class="stext">Mediclust</h1>
+              <h1 class="ttext">House Of laparo</h1>
+            </a>
+          </div>
+          <ul class="navbarlist" id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <span class="barclose" onclick="navClose()">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+          </ul>
+          <div class="mobile-navbar" onclick="navOpen()">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav> <!-- Navbar End -->
+
+  <!-- Emty Layar -->
+  <div class="emtylayar" style="width: 100%; height: 69px; background-color: f7f7f7;"></div>
+
+  <!-- Slider Starting -->
+  <div class="pc-laptop-screen">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Banner/arthroscopic-trocar.png" class="d-block w-100" alt="arthroscopic-trocar">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Banner/cautery-machine-smart-4.png" class="d-block w-100" alt="cautery-machine-smart-4">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Banner/laparoscopic-scissor.png" class="d-block w-100" alt="laparoscopic-scissor">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-screen">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img src="Banner/laparoscopic-scissor-phn.png" class="d-block w-100" alt="laparoscopic-scissor">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="Banner/arthroscopic-trocar-phn.png" class="d-block w-100" alt="arthroscopic-trocar">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Banner/cautery-machine-smart-4.-phn.png" class="d-block w-100" alt="cautery-machine-smart-4">
+          <div class="carousel-caption d-none d-md-block">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div> <!-- Slider End -->
+
+  <!-- Our Products Starting -->
+  <div class="pfarea">
+    <div class="pfxarea">
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Trocar-&-Cannula.png" alt="image" class="imagsize" onclick="touchimg(this)">
+            <img src="product img/Trocar-&-Cannula-1.png" alt="image" class="imagsize" onclick="touchimg(this)">
+            <img src="product img/Trocar-&-Cannula-3.png" alt="image" class="imagsize" onclick="touchimg(this)">
+            <img src="product img/Trocar-&-Cannula-2.png" alt="image" class="imagsize" onclick="touchimg(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Trocar-&-Cannula.png" alt="img" id="bigImg">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Trocar & Cannula</h1>
+          <p>Diameter: 3, 5, 7, 10, 12mm <br>
+            Quality: Medical grade <br>
+            Material: Stainless Steel <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Spiral-Trocar.png" alt="image" class="imagsizeone" onclick="touchimgone(this)">
+            <img src="product img/Spiral-Trocarimg1.png" alt="image" class="imagsizeone" onclick="touchimgone(this)">
+            <img src="product img/Spiral-Trocarimg2.png" alt="image" class="imagsizeone" onclick="touchimgone(this)">
+            <img src="product img/Spiral-Trocarimg3.png" alt="image" class="imagsizeone" onclick="touchimgone(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Spiral-Trocar.png" alt="img" id="bigImgone">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Spiral Trocar</h1>
+          <p>Diameter: 3, 5, 7, 10, 12mm <br>
+            Quality: Medical grade <br>
+            Material: Stainless Steel <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Safety-Trocar.png" alt="image" class="imagsizetwo" onclick="touchimgtwo(this)">
+            <img src="product img/Safety-Trocar1.png" alt="image" class="imagsizetwo" onclick="touchimgtwo(this)">
+            <img src="product img/Safety-Trocar2.png" alt="image" class="imagsizetwo" onclick="touchimgtwo(this)">
+            <img src="product img/Safety-Trocar3.png" alt="image" class="imagsizetwo" onclick="touchimgtwo(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Safety-Trocar.png" alt="img" id="bigImgtwo">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Safety Trocar</h1>
+          <p>Diameter: 3, 5, 7, 10, 12mm <br>
+            Quality: Medical grade <br>
+            Material: Stainless Steel <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Magnetic-Trocar.png" alt="image" class="imagsizethree" onclick="touchimgthree(this)">
+            <img src="product img/Magnetic-Trocar1.png" alt="image" class="imagsizethree" onclick="touchimgthree(this)">
+            <img src="product img/Magnetic-Trocar3.png" alt="image" class="imagsizethree" onclick="touchimgthree(this)">
+            <img src="product img/Magnetic-Trocar4.png" alt="image" class="imagsizethree" onclick="touchimgthree(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Magnetic-Trocar.png" alt="img" id="bigImgthree">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Magnetic Trocar</h1>
+          <p>Diameter: 3, 5, 7, 10, 12mm <br>
+            Quality: Medical grade <br>
+            Material: Stainless Steel <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Reducer.png" alt="image" class="imagsizefour" onclick="touchimgfour(this)">
+            <img src="product img/Reducer1.png" alt="image" class="imagsizefour" onclick="touchimgfour(this)">
+            <img src="product img/Reducer2.png" alt="image" class="imagsizefour" onclick="touchimgfour(this)">
+            <img src="product img/Reducer3.png" alt="image" class="imagsizefour" onclick="touchimgfour(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Reducer.png" alt="img" id="bigImgfour">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Reducer</h1>
+          <p>Diameter: 3,5,10mm <br>
+            Quality: Medical grade <br>
+            Material: Stainless Steel <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Smart-4-Plus-Cautery-Machine.png" alt="image" class="imagsizefive"
+              onclick="touchimgfive(this)">
+            <img src="product img/Smart-4-Plus-Cautery-Machine1.png" alt="image" class="imagsizefive"
+              onclick="touchimgfive(this)">
+            <img src="product img/Smart-4-Plus-Cautery-Machine2.png" alt="image" class="imagsizefive"
+              onclick="touchimgfive(this)">
+            <img src="product img/Smart-4-Plus-Cautery-Machine.png" alt="image" class="imagsizefive"
+              onclick="touchimgfive(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Smart-4-Plus-Cautery-Machine.png" alt="img" id="bigImgfive">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Smart 4 Plus Cautery Machine</h1>
+          <p> Weight: 7.5Kg (approx) <br>
+            Dimension: 410mm(L) x 355mm(W) x155mm(H) <br>
+            Voltage : Input Supply Voltage 230V(+/-15%)50Hz
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/CO2-Insufflator.png" alt="image" class="imagsizesix" onclick="touchimgsix(this)">
+            <img src="product img/CO2-Insufflator1.png" alt="image" class="imagsizesix" onclick="touchimgsix(this)">
+            <img src="product img/CO2-Insufflator.png" alt="image" class="imagsizesix" onclick="touchimgsix(this)">
+            <img src="product img/CO2-Insufflator1.png" alt="image" class="imagsizesix" onclick="touchimgsix(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/CO2-Insufflator.png" alt="img" id="bigImgsix">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>CO2 Insufflator</h1>
+          <p>Air Mode <br>
+            Co2 Warmer, <br>
+            Regulator Inbuilt, German Kit <br>
+            Gas: Co2(medical) m Co2 gas supply system <br>
+            Flow rate min to max: 1 to 30 liters/min (model-CO2-2000): 1 to30 liters/min (model -ICO2 - 3000) <br>
+            Type of power supply : 230 vac + 15% @ 50 – 60 Hz <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="banner" style="width: 100%; margin: 0 auto; margin-top: 50px; margin-bottom: 30px;">
+        <img src="Banner/Crown.jpg" alt="banner" style="width: 100%;">
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Crown.png" alt="image" class="imagsizeseven" onclick="touchimgseven(this)">
+            <img src="product img/Crown1.png" alt="image" class="imagsizeseven" onclick="touchimgseven(this)">
+            <img src="product img/Crown.png" alt="image" class="imagsizeseven" onclick="touchimgseven(this)">
+            <img src="product img/Crown1.png" alt="image" class="imagsizeseven" onclick="touchimgseven(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Crown.png" alt="img" id="bigImgseven">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Crown</h1>
+          <p>Power: 220V+ -22V 50Hz+ - 1Hz (110V+ -11V, 60Hz) <br>
+            Operating frequency: 512KHz <br>
+            Power rating : 880VA+ -10% <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Hysteroscopy-Set.png" alt="image" class="imagsizeeight" onclick="touchimgeight(this)">
+            <img src="product img/Hysteroscopy-Set1.png" alt="image" class="imagsizeeight" onclick="touchimgeight(this)">
+            <img src="product img/Hysteroscopy-Set.png" alt="image" class="imagsizeeight" onclick="touchimgeight(this)">
+            <img src="product img/Hysteroscopy-Set1.png" alt="image" class="imagsizeeight" onclick="touchimgeight(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Hysteroscopy-Set.png" alt="img" id="bigImgeight">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Hysteroscopy Set</h1>
+          <p>Diameter: 2.9MM & 4 mm <br>
+            Hysteroscopy Operative Sheath <br>
+            Diagnostic Sheath <br>
+            Flexible/Semi both available <br>
+            Rigid Biopsy Forceps (5fr.) <br>
+            Aligator Forceps <br>
+            Scissors <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Resectoscopic-Set.png" alt="image" class="imagsizenine" onclick="touchimgnine(this)">
+            <img src="product img/Resectoscopic-Set1.png" alt="image" class="imagsizenine" onclick="touchimgnine(this)">
+            <img src="product img/Resectoscopic-Set.png" alt="image" class="imagsizenine" onclick="touchimgnine(this)">
+            <img src="product img/Resectoscopic-Set1.png" alt="image" class="imagsizenine" onclick="touchimgnine(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Resectoscopic-Set.png" alt="img" id="bigImgnine">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Resectoscopic Set</h1>
+          <p>Diameter: 2.9MM & 4mm channel
+            Type: Active & Passive/ Single and Double Stem
+            Connection Type: Monopolar/Biopolar 
+            Item:
+            Working element, Inner & Outer sheath, Elick evacuator, H.F. Cable, Cutting loop, Kolins knife, Roller
+            ball, Cold knife.
+            9. Laparoscopic Endo Trainer
+            1. Endotrainer Set (Abdominal shape)
+            2. Suture pad (Silicon)
+            3. Needle holder
+            4. Scissors
+            5. Maryland
+            6. Fenestrated grasper
+            7. Port
+            8. Led light source with charger
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent respmargin">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Resectoscope-Working-Element.png" alt="image" class="imagsizeten" onclick="touchimgten(this)">
+            <img src="product img/Resectoscope-Working-Element1.png" alt="image" class="imagsizeten" onclick="touchimgten(this)">
+            <img src="product img/Resectoscope-Working-Element.png" alt="image" class="imagsizeten" onclick="touchimgten(this)">
+            <img src="product img/Resectoscope-Working-Element1.png" alt="image" class="imagsizeten" onclick="touchimgten(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Resectoscope-Working-Element.png" alt="img" id="bigImgten">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Resectoscope Working Element</h1>
+          <p>Length: 300mm <br>
+            Size: 4mm <br>
+            Material: Stainless steel <br>
+            Quality: Full autoclave <br>
+            Diameter: 2.9 <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Uterine-Manipulator.png" alt="image" class="imagsizeelevrn" onclick="touchimgeleven(this)">
+            <img src="product img/Uterine-Manipulator1.png" alt="image" class="imagsizeelevrn" onclick="touchimgeleven(this)">
+            <img src="product img/Uterine-Manipulator.png" alt="image" class="imagsizeelevrn" onclick="touchimgeleven(this)">
+            <img src="product img/Uterine-Manipulator1.png" alt="image" class="imagsizeelevrn" onclick="touchimgeleven(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Uterine-Manipulator.png" alt="img" id="bigImgeleven">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Uterine Manipulator (Mangeshkar)</h1>
+          <p>Type: Mageshkar <br>
+            Quality: Autoclavable <br>
+            Material: Stainless steel <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Otis-Sheath.png" alt="image" class="imagsizetwelve" onclick="touchimgtwelve(this)">
+            <img src="product img/Otis-Sheath1.png" alt="image" class="imagsizetwelve" onclick="touchimgtwelve(this)">
+            <img src="product img/Otis-Sheath.png" alt="image" class="imagsizetwelve" onclick="touchimgtwelve(this)">
+            <img src="product img/Otis-Sheath1.png" alt="image" class="imagsizetwelve" onclick="touchimgtwelve(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Otis-Sheath.png" alt="img" id="bigImgtwelve">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Otis Sheath</h1>
+          <p>Applicable: Urology Surgical Instrument <br>
+            Material: Metal, Medical Grade Stainless Steel
+            Warranty: 1 year
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Colpotomizer.png" alt="image" class="imagsizethrirteen" onclick="touchimgthrirteen(this)">
+            <img src="product img/Colpotomizer1.png" alt="image" class="imagsizethrirteen" onclick="touchimgthrirteen(this)">
+            <img src="product img/Colpotomizer.png" alt="image" class="imagsizethrirteen" onclick="touchimgthrirteen(this)">
+            <img src="product img/Colpotomizer1.png" alt="image" class="imagsizethrirteen" onclick="touchimgthrirteen(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Colpotomizer.png" alt="img" id="bigImgthrirteen">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Colpotomizer</h1>
+          <p>Colpotomizer with 3 Tips <br>
+            Material: Stainless Steel <br>
+            Quality: Autoclavable <br>
+            Applicable: Gynecology surgical instrument <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Vaginal-tube1.png" alt="image" class="imagsizefourteen" onclick="touchimgfourteen(this)">
+            <img src="product img/Vaginal-tube.png" alt="image" class="imagsizefourteen" onclick="touchimgfourteen(this)">
+            <img src="product img/Vaginal-tube1.png" alt="image" class="imagsizefourteen" onclick="touchimgfourteen(this)">
+            <img src="product img/Vaginal-tube.png" alt="image" class="imagsizefourteen" onclick="touchimgfourteen(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Vaginal-tube1.png" alt="img" id="bigImgfourteen">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Vaginal tube</h1>
+          <p>Diameter: 5mm <br>
+            Length: 200mm <br>
+            Applicable: Gynecology surgical instrument <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Tenaculum-Forceps.png" alt="image" class="imagsizefiveteen" onclick="touchimgfiveteen(this)">
+            <img src="product img/Tenaculum-Forceps1.png" alt="image" class="imagsizefiveteen" onclick="touchimgfiveteen(this)">
+            <img src="product img/Tenaculum-Forceps.png" alt="image" class="imagsizefiveteen" onclick="touchimgfiveteen(this)">
+            <img src="product img/Tenaculum-Forceps1.png" alt="image" class="imagsizefiveteen" onclick="touchimgfiveteen(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Tenaculum-Forceps.png" alt="img" id="bigImgfiveteen">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Tenaculum forceps</h1>
+          <p>Diameter: 10mm <br>
+            Length:300mm <br>
+            Material: Stainless Steel<br>
+            Quality: Autoclavable <br>
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+      <div class="pffxareacontent">
+        <div class="pleftsbox">
+          <div class="piboxone">
+            <img src="product img/Uterine-Manipulator(Marwa).png" alt="image" class="imagsizesixteen" onclick="touchimgsixteen(this)">
+            <img src="product img/Uterine-Manipulator(Marwa).png" alt="image" class="imagsizesixteen" onclick="touchimgsixteen(this)">
+            <img src="product img/Uterine-Manipulator(Marwa).png" alt="image" class="imagsizesixteen" onclick="touchimgsixteen(this)">
+            <img src="product img/Uterine-Manipulator(Marwa).png" alt="image" class="imagsizesixteen" onclick="touchimgsixteen(this)">
+          </div>
+          <div class="piboxtwo">
+            <img src="product img/Uterine-Manipulator(Marwa).png" alt="img" id="bigImgsixteen">
+          </div>
+        </div>
+        <div class="prightsbox">
+          <h1>Uterine Manipulator(Marwa)</h1>
+          <p>Material : Stainless steel
+            Sterilized : Sterilized
+            Type : Uterine Manipulator
+            Thickness : 5 mm
+          </p>
+          <button class="bnowbtn" onclick="clicktab()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Our Products End -->
+
+  <div class="banner" style="width: 100%; margin: 0 auto; margin-bottom: 30px;">
+    <img src="Banner/veress-needle.png1.png" alt="banner" style="width: 100%;">
+  </div>
+
+  <!-- Footer Starting -->
+  <footer>
+    <div class="footer-full-width">
+      <div class="footer-fix-width">
+        <div class="footer-content">
+          <div class="fbox1">
+            <h1>Our Company</h1>
+            <span class="cdescripation">
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="product.html">Our Products</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+              </ul>
+              <span class="socailicon">
+                <a href="https://www.facebook.com/Kara-Mediclust-106023911965232" target="_blank"><i
+                    class="fa-brands fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/accounts/login/?next=/karamediclustpvtltd/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/Karamedisuppli1" target="_blank"><i
+                    class="fa-brands fa-twitter-square"></i></a>
+                <a href=""></a><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""></a><i class="fa-brands fa-youtube-square"></i></a>
+              </span>
+            </span>
+          </div>
+          <div class="fbox2">
+            <h1>Reach Us</h1>
+            <span class="kadressde">
+              <h3>Kara Mediclust Private Limited</h3>
+              <p> F 12/3, 3rd Floor, Street No. 29 IP Extension, <br>
+                Patparganj, Near Preet Vihar Metro Station,
+                New <br> Delhi-110092, Delhi, India</p>
+              <p style="font-size: 15px;">Call Number : +91-9716353859</p>
+            </span>
+          </div>
+          <div class="fbox3">
+            <h1>About Us</h1>
+            <span class="aboutusd">
+              <h3>Kara Mediclust Private Limited</h3>
+              <p> Established in 2015, we, Kara Mediclust Private Limited
+                is an eminent entity indulged in Manufacturer and Trader a huge compilation .. <a href="about.html">Read
+                  More</a>
+                </h4>
+              <p style="font-size: 15px;">Gmail : karamediclust@gmail.com</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <h1 class="cright">All rights reserved by <b>Kara Mediclust Private.Limited</b></h1>
+  </footer> <!-- Footer End -->
+
+  <!-- BOOTSTRAP JS FILE LINK -->
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+  <!-- JAVASCRIPT FILE LINK -->
+  <script src="javascript/karaScript.js"></script>
+</body>
+
+</html>
